@@ -24,7 +24,6 @@ class ModelTrainer:
                 train_array[:,-1],
                 test_array[:,:-1],
                 test_array[:,-1]
-
             )
 
             models={
@@ -52,8 +51,6 @@ class ModelTrainer:
             save_object(
                     file_path=self.model_trainer_config.trained_model_file_path,
                     obj=best_model
-
-
             )
         except Exception as e:
             logging.info('Error occured in model training')
